@@ -1,0 +1,14 @@
+.code-line {
+  counter-increment: linenumber;
+}
+
+/*行番号を擬似要素として表示*/
+.code-line::before {
+  content: counter(linenumber);
+  display:inline-block;
+  color: #ccc;
+  text-align: right;
+  width: 35px;
+  padding: 0 15px 0 0;
+}
+

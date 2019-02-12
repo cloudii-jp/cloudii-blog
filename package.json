@@ -1,0 +1,11 @@
+{
+  "license": "UNLICENSED",
+  "scripts": {
+    "build-js": "uglifyjs src/js/* -o dist/app.min.js",
+    "build-css": "uglifycss src/css/* > dist/style.min.css"
+  },
+  "dependencies": {
+    "uglify-js": "^3.4.9",
+    "uglifycss": "^0.0.29"
+  }
+}
